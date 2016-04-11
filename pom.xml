@@ -11,6 +11,7 @@
 	<modules>
 		<module>linked-list</module>
 		<module>doubly-linked-list</module>
+		<module>queue</module>
 	</modules>
 
 	<name>data-structure</name>
