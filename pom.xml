@@ -5,11 +5,12 @@
 
 	<groupId>br.com.robertodebarba</groupId>
 	<artifactId>data-structure</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
 
 	<modules>
 		<module>linked-list</module>
+		<module>doubly-linked-list</module>
 	</modules>
 
 	<name>data-structure</name>
