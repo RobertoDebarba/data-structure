@@ -3,6 +3,8 @@ package br.com.robertodebarba.linkedlist;
 public class Main {
 
     public static void main(final String[] args) {
+	System.out.println("LinkedList");
+
 	final List<Integer> list = new List<Integer>();
 	list.add(0);
 	list.add(1);
@@ -33,6 +35,23 @@ public class Main {
 	list.addOrderly(2);
 
 	list.show();
+
+	System.out.println("Recursive LinkedList");
+
+	final RecursiveList<Integer> recursiveList = new RecursiveList<Integer>();
+
+	recursiveList.add(0);
+	recursiveList.add(1);
+	recursiveList.add(2);
+	recursiveList.add(3);
+	recursiveList.add(4);
+
+	recursiveList.show();
+
+	recursiveList.remove(4);
+	recursiveList.remove(2);
+
+	recursiveList.show();
 
     }
 
