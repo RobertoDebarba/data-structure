@@ -1,6 +1,6 @@
 package br.com.robertodebarba.linkedlist;
 
-public class List<T> {
+public class List<T extends Comparable<T>> {
 
     private Node<T> first;
     private int size;
@@ -12,6 +12,27 @@ public class List<T> {
 	this.first = newNode;
 
 	this.size++;
+    }
+
+    public void addOrderly(final T info) {
+	Node<T> currentNode = this.first;
+	Node<T> previousNode = null;
+
+	while (currentNode != null && currentNode.getInfo().compareTo(info) == 1) {
+	    previousNode = currentNode;
+	    currentNode = currentNode.getNext();
+	}
+
+	final Node<T> newNode = new Node<T>();
+	newNode.setInfo(info);
+
+	if (previousNode == null) {
+	    newNode.setNext(this.first);
+	    this.first = newNode;
+	} else {
+	    newNode.setNext(currentNode);
+	    previousNode.setNext(newNode);
+	}
     }
 
     public void show() {

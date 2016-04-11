@@ -30,6 +30,10 @@ public class Main {
 
 	list.getReverse().show();
 
+	list.addOrderly(2);
+
+	list.show();
+
     }
 
 }
