@@ -1,9 +1,9 @@
-package br.com.robertodebarba.queue;
+package br.com.robertodebarba.stack;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListQueue<T> {
+public class ListStack<T> {
 
     private final List<T> info = new ArrayList<T>();
 
@@ -13,7 +13,7 @@ public class ListQueue<T> {
 
     public T pop() {
 	if (this.isEmpty()) {
-	    throw new RuntimeException("Queue is empty.");
+	    throw new RuntimeException("Stack is empty.");
 	}
 
 	final T lastInfo = this.info.get(this.info.size() - 1);
@@ -23,7 +23,7 @@ public class ListQueue<T> {
 
     public T peek() {
 	if (this.isEmpty()) {
-	    throw new RuntimeException("Queue is empty.");
+	    throw new RuntimeException("Stack is empty.");
 	}
 
 	return this.info.get(this.info.size() - 1);

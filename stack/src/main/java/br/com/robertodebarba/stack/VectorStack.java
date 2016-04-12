@@ -1,13 +1,13 @@
-package br.com.robertodebarba.queue;
+package br.com.robertodebarba.stack;
 
-public class VectorQueue<T> {
+public class VectorStack<T> {
 
     private final T[] info;
     private final int limit;
     private int currentSize;
 
     @SuppressWarnings("unchecked")
-    public VectorQueue(final int limit) {
+    public VectorStack(final int limit) {
 	this.currentSize = 0;
 	this.limit = limit;
 	this.info = (T[]) new Object[limit];
@@ -15,7 +15,7 @@ public class VectorQueue<T> {
 
     public void push(final T info) {
 	if (this.limit == this.currentSize) {
-	    throw new RuntimeException("Queue overflow.");
+	    throw new RuntimeException("Stack overflow.");
 	}
 
 	this.info[this.currentSize++] = info;
@@ -23,7 +23,7 @@ public class VectorQueue<T> {
 
     public T pop() {
 	if (this.isEmpty()) {
-	    throw new RuntimeException("Queue is empty.");
+	    throw new RuntimeException("Stack is empty.");
 	}
 
 	return this.info[--this.currentSize];
@@ -31,7 +31,7 @@ public class VectorQueue<T> {
 
     public T peek() {
 	if (this.isEmpty()) {
-	    throw new RuntimeException("Queue is empty.");
+	    throw new RuntimeException("Stack is empty.");
 	}
 
 	return this.info[this.currentSize - 1];
