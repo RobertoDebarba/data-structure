@@ -13,6 +13,7 @@
 		<module>doubly-linked-list</module>
 		<module>stack</module>
 		<module>queue</module>
+		<module>bubble-sort</module>
 	</modules>
 
 	<name>data-structure</name>
