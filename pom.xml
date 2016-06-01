@@ -29,6 +29,7 @@
 		<module>queue</module>
 		<module>bubble-sort</module>
 		<module>optimized-bubble-sort</module>
+		<module>binary-tree</module>
 	</modules>
 
 	<name>data-structure</name>
