@@ -28,6 +28,7 @@
 		<module>stack</module>
 		<module>queue</module>
 		<module>bubble-sort</module>
+		<module>optimized-bubble-sort</module>
 	</modules>
 
 	<name>data-structure</name>
