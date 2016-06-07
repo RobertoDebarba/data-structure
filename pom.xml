@@ -30,6 +30,7 @@
 		<module>bubble-sort</module>
 		<module>optimized-bubble-sort</module>
 		<module>binary-tree</module>
+		<module>quick-sort</module>
 	</modules>
 
 	<name>data-structure</name>
