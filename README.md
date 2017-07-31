@@ -1,20 +1,10 @@
 # Data structure algorithms
 
-This is a simple Java project containing the implementation of data structure algorithms. You can check the theory on the web.
+This repository contains simple Java projects with data structure algorithms implementations. You can check the theory on the web.
 
-## Build and Run ##
+*Este repositório contém projetos Java com a implementação de algoritmos de estrutura de dados. Você pode ler a teorio na web.*
 
-### Requirements ###
+## Requirements
+
 * JDK 8
 * Maven
-  
-### Run ###
-* Compile:
-```shell
-mvn compile
-```
-
-* Test:
-```shell
-mvn test
-```
